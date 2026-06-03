@@ -58,4 +58,16 @@
     width: 194px;
     height: 56px;
     background-color: #1b414b;
+    color: #fbfbfb;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+
+}
+
+.rent-submit-button:hover,
+.rent-submit-button:focus {
+    background-color: #fbfbfb;
+    color: #1b414b;
 }

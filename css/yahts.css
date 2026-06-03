@@ -95,17 +95,23 @@
 
 .yacht-rental-button {
     border: 1px solid rgba(251, 251, 251, 0.35);
-        border-radius: 15px;
-        padding-block: 16px;
-        padding-inline: 40px;
-        width: 179px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.1;
-        letter-spacing: -0.02em;
-        color: #fbfbfb;
-        display: block;
-        margin: 0 auto;
+    border-radius: 15px;
+    padding-block: 16px;
+    padding-inline: 40px;
+    width: 179px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    display: block;
+    margin: 0 auto;
+}
+
+.yacht-rental-button:hover,
+.yacht-rental-button:focus {
+    background-color: #fbfbfb;
+    color: #1b414b;
 }

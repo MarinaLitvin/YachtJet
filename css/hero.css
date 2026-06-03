@@ -2,6 +2,7 @@
     background-color: #0e1823;
     padding-top: 235px;
     padding-bottom: 180px;
+    font-family: inherit;
 }
 
 .hero-container {
@@ -36,7 +37,6 @@
     padding-inline: 40px;
     width: 179px;
     background-color: #1b414b;
-    font-family: inherit;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.1;
