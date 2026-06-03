@@ -1,0 +1,46 @@
+.header {
+    font-family: inherit;
+    padding-top: 32px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbfbfb;
+    width: 1080px;
+    border: 1px solid #fbfbfb;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 0 auto;
+}
+
+.header .logo {    
+    color: #1b414b;
+}
+
+.header .nav-link {
+    color: #fbfbfb;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background: #1b414b;
+}
+
+.header .soc-link:hover,
+.header .soc-link:focus {
+    color: #062730;
+}
+
+.header .soc-icon {
+    fill: #1b414b;
+}
+
+.header .soc-icon:hover,
+.header .soc-icon:focus {
+    fill: #062730;
+}

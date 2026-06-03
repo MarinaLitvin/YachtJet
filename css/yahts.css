@@ -1,0 +1,111 @@
+.yachts-section {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-family: inherit;
+}
+
+.yachts-section-title {
+    width: 714px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.yacht-cards {    
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.yacht-card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 377px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+}
+
+.list-item-pic {
+    margin: 0;
+    padding: 0;
+}
+
+.card-caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yacht-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #1b414b;
+}
+
+.yacht-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(4, 3, 6, 0.4);
+    margin: 0;
+}
+
+.yacht-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yacht-features {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(4, 3, 6, 0.4);
+}
+
+.yacht-characteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: #040306;
+}
+
+.yacht-rental-button {
+    border: 1px solid rgba(251, 251, 251, 0.35);
+        border-radius: 15px;
+        padding-block: 16px;
+        padding-inline: 40px;
+        width: 179px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #fbfbfb;
+        display: block;
+        margin: 0 auto;
+}
