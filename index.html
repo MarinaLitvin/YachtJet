@@ -19,57 +19,76 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
     <header class="header">
-      <div class="header-container">
-        <a class="logo" href="./index.html">yachtjet</a>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#yachts">Yachts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="soc-list">
-          <li class="soc-item">
-            <a
-              class="soc-link"
-              href="https://www.instagram.com/"
-              target="_blank"
+
+      <div class="container header-container">
+
+        <div class="header-content">
+
+          <a class="logo" href="#home">yachtjet</a>
+
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#yachts">Yachts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="soc-list">
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                >
+                <svg class="soc-icon" width="19" height="19">
+                  <use href="./images/icons.svg#icon-ig"></use>
+                </svg>
+              </a
               >
-              <svg class="soc-icon" width="19" height="19">
-                <use href="./images/icons.svg#icon-ig"></use>
-              </svg>
-            </a
-            >
-          </li>
-          <li class="soc-item">
-            <a class="soc-link" href="https://www.youtube.com/" target="_blank">
-              <svg class="soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-yt"></use>
-              </svg>
-            </a
-            >
-          </li>
-          <li class="soc-item">
-            <a class="soc-link" href="https://www.facebook.com/" target="_blank">
-              <svg class="soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+            </li>
+            <li class="soc-item">
+              <a class="soc-link" href="https://www.youtube.com/" target="_blank">
+                <svg class="soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-yt"></use>
+                </svg>
+              </a
+              >
+            </li>
+            <li class="soc-item">
+              <a class="soc-link" href="https://www.facebook.com/" target="_blank">
+                <svg class="soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>          
+        
+          <button
+            type="button"
+            class="burger-open-button"
+            aria-label="Open navigation menu"
+          >
+            <svg class="burger-open" width="28" height="28">
+              <use href="/images/icons.svg#icon-ci_menu-duo-lg"></use>
+            </svg>
+          </button>     
+                              
+        </div>
       </div>
-    </header>
+    </header>    
 
     <main>
-      <section class="hero-section">
+      <section class="section hero-section">
         <div class="container hero-container">
           <h1 class="main-title">
             Explore the High Seas with Our Luxury Yacht Rentals
@@ -84,7 +103,7 @@
         </div>
       </section>
 
-      <section class="about-section" id="about">
+      <section class="section about-section" id="about">
         <div class="container">
           <div class="about-wrap">
             <div class="about-content">
@@ -106,35 +125,77 @@
                 </p>
               </div>
             </div>
-            <img
-              class="about-pic"
-              src="./images/about-boat.jpg"
-              alt="about-boat"
-              width="1180px"
-              height="470px"
-            />
-          </div>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/about-images/about-d.avif    1x,
+                  ./images/about-images/about-d@2x.avif 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/about-images/about-t.avif    1x,
+                  ./images/about-images/about-t@2x.avif 2x
+                "
+              />
+              <img
+                class="about-pic"
+                src="/images/about-images/about-m.avif"
+                srcset="
+                  ./images/about-images/about-m.avif    1x,
+                  ./images/about-images/about-m@2x.avif 2x
+                "
+                alt="Yacht on water at night, front view."
+                width="335px"
+                height="395px"
+              />
+            </picture>
+          </div>          
         </div>
       </section>
 
-      <section class="yachts-section" id="yachts">
-        <div class="container">
+      <section class="section yachts-section" id="yachts">
+        <div class="container yachts-container">
           <h2 class="yachts-section-title">
             Choose your dream yacht and sail away into the sunset
           </h2>
 
           <ul class="yacht-cards">
             <li class="yacht-card">
-              <img
-                src="./images/yacht-cards/yaht-arrow.jpg"
-                alt="yacht-arrow"
-                width="345"
-                height="268"
-              />
+
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-arrow-d.avif    1x,
+                    ./images/yacht-cards/yacht-arrow-d@2x.avif 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-arrow-t.avif    1x,
+                    ./images/yacht-cards/yacht-arrow-t@2x.avif 2x
+                  "
+                />
+                <img
+                  class="yacht-card-pic"
+                  src="./images/yacht-cards/yacht-arrow-m.avif"
+                  srcset="
+                  ./images/yacht-cards/yacht-arrow-m.avif 1x,
+                  ./images/yacht-cards/yacht-arrow-m@2x.avif 2x"
+                  alt="Arrow yacht"
+                  width="302"
+                  height="240"/>
+              </picture>
 
               <figcaption class="card-caption">
-                <span class="yacht-name">Arrow</span>
-                <span class="yacht-text">LUXURY YAHTS</span>
+                <div class="caption-top">
+                  <span class="yacht-name">Arrow</span>
+                  <span class="yacht-text">LUXURY YAHTS</span>
+                </div>
               </figcaption>
 
               <div class="yacht-info">
@@ -156,16 +217,38 @@
             </li>
 
             <li class="yacht-card">
-              <img
-                src="./images/yacht-cards/yaht-benetti-oasis.jpg"
-                alt="yacht-benetti-oasis"
-                width="345"
-                height="268"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-benetti-oasis-d.avif    1x,
+                    ./images/yacht-cards/yacht-benetti-oasis-d@2x.avif 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-benetti-oasis-t.avif    1x,
+                    ./images/yacht-cards/yacht-benetti-oasis-t@2x.avif 2x
+                  "
+                />
+
+                <img
+                  class="yacht-card-pic"
+                  src="./images/yacht-cards/yacht-benetti-oasis-m.avif"
+                  srcset="./images/yacht-cards/yacht-benetti-oasis-m.avif 1x,
+                  ./images/yacht-cards/yacht-benetti-oasis-m@2x.avif 2x"
+                  alt="Benetti oasis yacht"
+                  width="302"
+                  height="240"
+                />
+              </picture>
 
               <figcaption class="card-caption">
-                <span class="yacht-name">BENETTI OASIS 40M BO122</span>
-                <p class="yacht-text">LUXURY YAHTS</span>
+                <div class="caption-top">
+                  <span class="yacht-name">BENETTI OASIS 40M BO122</span>
+                  <p class="yacht-text">LUXURY YAHTS</span>
+                </div>
               </figcaption>
 
               <div class="yacht-info">
@@ -187,16 +270,38 @@
             </li>
 
             <li class="yacht-card">
-              <img
-                src="./images/yacht-cards/yaht-belle-anna.jpg"
-                alt="yacht-belle-anna"
-                width="345"
-                height="268"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-belle-anna-d.avif    1x,
+                    ./images/yacht-cards/yacht-belle-anna-d@2x.avif 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/yacht-cards/yacht-belle-anna-t.avif    1x,
+                    ./images/yacht-cards/yacht-belle-anna-t@2x.avif 2x
+                  "
+                />
+
+                <img
+                  class="yacht-card-pic"
+                  src="./images/yacht-cards/yacht-belle-anna-m.avif"
+                  srcset="./images/yacht-cards/yacht-belle-anna-m.avif 1x,
+                  ./images/yacht-cards/yacht-belle-anna-m@2x.avif 2x"
+                  alt="Belle Anna yacht"
+                  width="302"
+                  height="240"
+                />
+              </picture>
 
               <figcaption class="card-caption">
-                <span class="yacht-name">BELLE ANNA</span>
-                <span class="yacht-text">LUXURY YAHTS</span>
+                <div class="caption-top">
+                  <span class="yacht-name">BELLE ANNA</span>
+                  <span class="yacht-text">LUXURY YAHTS</span>
+                </div>
               </figcaption>
 
               <div class="yacht-info">
@@ -221,71 +326,120 @@
         </div>
       </section>
 
-      <section class="benefits-section">
+      <section class="section benefits-section">
         <div class="container benefits-container">
           <ul class="benefits-list">
             <li class="benefit-item">
-              <p>01</p>
-              <p>Swimming and water sports: try your hand at water skiing</p>
+              <p class="benefit-number">01</p>
+              <p class="benefit-text">Swimming and water sports: try your hand at water skiing</p>
             </li>
             <li class="benefit-item">
-              <p>02</p>
-              <p>Fishing: try to catch your own dinner</p>
+              <p class="benefit-number">02</p>
+              <p class="benefit-text">Fishing: try to catch your own dinner</p>
             </li>
             <li class="benefit-item">
-              <p>03</p>
-              <p>
+              <p class="benefit-number">03</p>
+              <p class="benefit-text">
                 Sightseeing tours: take a shore or island tour, enjoy the views
                 and sunsets from the water
               </p>
             </li>
             <li class="benefit-item">
-              <p>04</p>
-              <p>
+              <p class="benefit-number">04</p>
+              <p class="benefit-text">
                 Rest and relaxation: read a book or listen to music while
                 enjoying the outdoor atmosphere.
               </p>
             </li>
           </ul>
-          <img
-              class="benefits-pic"
-              src="./images/benefits-boat.jpg"
-              alt="benefits-boat.jpg"
-              width="432"
-              height="424"
-            />          
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/benefits-images/benefits-d.avif    1x,
+                ./images/benefits-images/benefits-d@2x.avif 2x
+              "
+              />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/benefits-images/benefits-t.avif    1x,
+                ./images/benefits-images/benefits-t@2x.avif 2x
+              "
+            />
+            <img
+                class="benefits-pic"
+                src="./images/benefits-images/benefits-m.avif"
+                srcset="
+                  ./images/benefits-images/benefits-m.avif 1x,
+                  ./images/benefits-images/benefits-m@2x.avif 2x
+                "
+                alt="Yacht interior design"
+                width="335"
+                height="424"
+              />
+          </picture>          
         </div>
       </section>
 
-      <section class="rent-section" id="rent-yacht">
+      <section class="section" id="rent-yacht">
         <div class="container rent-container">
-          <img
-            class="rent-pic"
-            src="./images/rent-boat.jpg"
-            alt="rent-boat"
-            width="658"
-            height="536"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/rent-form-images/rent-d.avif    1x,
+                ./images/rent-form-images/rent-d@2x.avif 2x
+              "
+              />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/rent-form-images/rent-t.avif    1x,
+                ./images/rent-form-images/rent-t@2x.avif 2x
+              "
+            />
+            <img
+              class="rent-pic"
+              src="./images/rent-form-images/rent-m.avif"
+              alt="Yacht on water at night, rear side view."
+              width="335"
+              height="412"
+            />
+          </picture>
+
           <div class="rent-form-field">
-            <p class="rent-form-label">Rent a yacht now</p>
+            <h2 class="rent-form-label">Rent a yacht now</h2>
             <form class="rent-form">
-              <input
-                class="rent-form-input"
-                type="text"
-                placeholder="Full Name" />
-              <input
-                class="rent-form-input"
-                type="email" placeholder="Email" />
-              <input
-                class="rent-form-input"
-                type="tel"
-                placeholder="Phone number" />
-              <textarea
-                class="rent-form-input"
-                name="comment"
-                id="comment"
-                rows="4"
-                placeholder="Comment"></textarea>
+              <label>
+                <span class="sr-only">Full Name</span>              
+                <input
+                  class="rent-form-input"
+                  type="text"
+                  placeholder="Full Name" />
+              </label>
+              <label>
+                <span class="sr-only">Email</span>
+                <input
+                  class="rent-form-input"
+                  type="email" placeholder="Email" />
+              </label>              
+              <label>
+                <span class="sr-only">Phone number</span>
+                <input
+                  class="rent-form-input"
+                  type="tel"
+                  placeholder="Phone number" />
+              </label>
+              <label>
+                <span class="sr-only">Comment</span>
+                <textarea
+                  class="rent-form-input"
+                  name="comment"
+                  id="comment"
+                  rows="4"
+                  placeholder="Comment"></textarea>
+              </label>
             </form>
               <button
                 class="rent-submit-button"
@@ -294,7 +448,7 @@
         </div>
       </section>
 
-      <section class="reviews-section" id="reviews">
+      <section class="section reviews-section" id="reviews">
         <div class="container">
           <h2 class="reviews-title">
             YachtJet take pride in providing the best possible service and
@@ -310,8 +464,11 @@
             <li class="rev-card">
               <img
                 class="rev-pic"
-                src="./images/reviews-cards/john_wax.jpg"
-                alt="john_wax"
+                src="./images/reviews-cards/john_wax.avif"
+                srcset="
+                  ./images/reviews-cards/john_wax.avif 1x,
+                  ./images/reviews-cards/john_wax@2x.avif 2x"
+                alt="John Wax"
                 width="56"
                 height="56" />
               <p class="rev-name">John Wax</p>
@@ -326,8 +483,11 @@
             <li class="rev-card">
               <img
                 class="rev-pic"
-                src="./images/reviews-cards/victoria_romashenko.jpg"
-                alt="victoria_romashenko"
+                src="./images/reviews-cards/victoria_romashenko.avif"
+                srcset="
+                  ./images/reviews-cards/victoria_romashenko.avif 1x,
+                  ./images/reviews-cards/victoria_romashenko@2x.avif 2x"
+                alt="Victoria Romashenko"
                 width="56"
                 height="56" />
               <p class="rev-name">Victoria Romashenko</p>
@@ -342,7 +502,11 @@
             <li class="rev-card">
               <img
                 class="rev-pic"
-                src="./images/reviews-cards/ihor_trachuk.jpg" alt="ihor_trachuk"
+                src="./images/reviews-cards/ihor_trachuk.avif"
+                srcset="
+                  ./images/reviews-cards/ihor_trachuk.avif 1x,
+                  ./images/reviews-cards/ihor_trachuk@2x.avif 2x"
+                alt="Ihor Trachuk"
                 width="56"
                 height="56" />
               <p class="rev-name">Ihor Trachuk</p>
@@ -357,23 +521,26 @@
       </section>
     </main>
 
-    <footer class="footer"> 
-        <div class="footer-container">
-          <div class="footer-list">
+    <footer class="footer">      
+      <div class="container footer-container">
+        <div class="footer-wrap">
+          <div class="logo-nav-container">
             <a class="logo" href="./index.html">yachtjet</a>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#yachts">Yachts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-            </ul>
-          </nav>
+        
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#yachts">Yachts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <ul class="soc-list">
             <li class="soc-item">
               <a
@@ -403,13 +570,77 @@
               </a>
             </li>
           </ul>
-          </div>
-          <p class="footer-motto">
-            No matter which yacht you choose, our experienced crew will ensure
-            that your journey is smooth and enjoyable.
-          </p>
-          <p class="footer-small-text">2023. Yacht Adventures<span class="privacy-police">Privacy Police</span></p>
         </div>
+        <p class="footer-motto">
+          No matter which yacht you choose, our experienced crew will ensure
+          that your journey is smooth and enjoyable.
+        </p>
+        <p class="footer-small-text">2023. Yacht Adventures<span class="privacy-police">Privacy Police</span></p>
+      </div>
+        
     </footer>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="container mobile-menu-container">
+
+        <div class="mobile-menu-header">
+          <a class="logo" href="#home">yachtjet</a>
+          <button
+            type="button"
+            class="burger-close-button"
+            aria-label="Close navigation menu"
+          >
+            <svg class="burger-close" width="28" height="28">
+              <use href="/images/icons.svg#icon-ion_close-sharp"></use>
+            </svg>
+          </button>
+        </div>
+
+
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="#about" class="mobile-menu-link">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#yachts" class="mobile-menu-link">Yachts</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#reviews" class="mobile-menu-link">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <ul class="soc-list">
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              >
+              <svg class="soc-icon" width="19" height="19">
+                <use href="./images/icons.svg#icon-ig"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.youtube.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-yt"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.facebook.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> 
+      </div>
+    </div>
   </body>
 </html>

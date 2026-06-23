@@ -1,27 +1,82 @@
 .footer {
-    font-family: inherit;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .footer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .footer-container {    
     border-radius: 24px 24px 0 0;
     background-color: #1b414b;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 40px 30px 20px 30px;
 }
 
-.footer-list {
+@media (min-width: 768px) {
+    .footer-container {
+        padding-top: 50px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .footer-wrap {
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 96px;
+    }
+}
+
+.logo-nav-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 75px;
-    padding-right: 75px;
-    margin-bottom: 96px;
 }
 
-.footer .logo {
-    color: #fbfbfb;
+@media (min-width: 768px) {
+    .logo-nav-container {
+        gap: 110px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .logo-nav-container {
+        gap: 330px;
+    }
+}
+
+.footer .nav-list {
+    display: flex;
+    gap: 4px;
+}
+
+.footer .soc-list {
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer .soc-list {
+        margin: 0;
+    }
 }
 
 .footer .nav-link {
@@ -44,27 +99,47 @@
 }
 
 .footer-motto {
+    width: 100%;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 1;
     letter-spacing: -0.02em;
     text-align: center;
-    color: #fbfbfb;
-    width: 640px;
+    max-width: 279px;
     margin: 0 auto;
-    margin-bottom: 99px;
+    margin-bottom: 82px;
+}
+
+@media (min-width: 768px) {
+    .footer-motto {
+        font-size: 32px;
+        max-width: 640px;
+        margin-bottom: 99px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-motto {
+        max-width: 693px;
+    }
 }
 
 .footer-small-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.18;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: rgba(251, 251, 251, 0.4);
     padding: 0;
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .footer-small-text {
+        font-size: 14px;
+    }
+}
+
 .privacy-police {
-    margin-left: 32px;
+    margin-left: 20px;
 }

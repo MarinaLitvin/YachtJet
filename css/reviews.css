@@ -1,12 +1,11 @@
 .reviews-section {
-    font-family: inherit;
-    padding-bottom: 150px;
+    padding-top: 0;   
 }
 
 .reviews-title {
-    width: 854px;
+    width: 100%;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 28px;
     line-height: 1;
     letter-spacing: -0.02em;
     text-align: center;
@@ -15,11 +14,23 @@
     margin-bottom: 25px;
 }
 
+@media (min-width: 768px) {
+    .reviews-title {
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reviews-title {
+        max-width: 854px;
+    }
+}
+
 .rev-text {
-    width: 571px;
+    width: 100%;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.28571;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: -0.02em;
     text-align: center;
     color: rgba(251, 251, 251, 0.4);
@@ -27,27 +38,68 @@
     margin-bottom:75px;
 }
 
+@media (min-width: 768px) {
+    .rev-text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .rev-text {
+        max-width: 571px;
+    }
+}
 
 .rev-cards {
     display: flex;
+    flex-direction: column;
     gap: 26px;
+}
+
+@media (min-width: 768px) {
+    .rev-cards {
+        flex-direction: row;
+        gap: 32px;
+        /* flex-wrap: wrap; */
+    }
 }
 
 .rev-card {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-align: center;
     background-color: #fbfbfb;
     border-radius: 24px;
 }
 
+@media (min-width: 768px) {
+    .rev-card {
+        width: 336px;
+        padding-left: 16x;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .rev-card {
+        width: 376px;
+        padding-left: 28x;
+        padding-right: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .rev-card:last-child {
+        display: none;
+    }
+}
+
 .rev-pic {
     margin: 0 auto;
+    margin-bottom: 24px;
     border-radius: 72px;
-    width: 56px;
-    height: 56px;
 }
 
 .rev-name {
@@ -57,6 +109,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     color: #040306;
+    margin-bottom: 8px;
 }
 
 .rec-text {

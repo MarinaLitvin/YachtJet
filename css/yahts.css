@@ -1,39 +1,89 @@
-.yachts-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    font-family: inherit;
+.yachts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .yachts-container {
+        gap: 0;
+    }
 }
 
 .yachts-section-title {
-    width: 714px;
     font-weight: 500;
-    font-size: 48px;
+    font-size: 28px;
     line-height: 1;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
     margin: 0 auto;
-    margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+    .yachts-section-title {
+        width: 645px;
+        margin-bottom: 75px;
+        font-size: 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .yachts-section-title {
+        width: 714px;
+    }
 }
 
 .yacht-cards {    
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 40px;
     margin: 0;
-    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .yacht-cards {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        /* flex-wrap: wrap; */
+    }
 }
 
 .yacht-card {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    width: 377px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
     padding-bottom: 32px;
     background-color: #FFFFFF;
     border-radius: 24px;
+}
+
+@media (min-width: 768px) {
+    .yacht-card {
+        min-width: 336px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .yacht-card {
+        min-width: 377px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .yacht-card:last-child {
+            display: none;
+        }
+}
+
+.yacht-card-pic {
+    width: 100%;
+    margin-bottom: 32px;
 }
 
 .list-item-pic {
@@ -43,7 +93,21 @@
 
 .card-caption {
     display: flex;
+    flex-direction: column;
+}
+
+.caption-top {
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.card-caption::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgba(4, 3, 6, 0.1);
+    margin-bottom: 16px;
 }
 
 .yacht-name {
@@ -53,6 +117,10 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
     color: #1b414b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .yacht-text {

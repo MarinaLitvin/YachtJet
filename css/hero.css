@@ -1,8 +1,51 @@
-.hero-section {
+.section.hero-section {
     background-color: #0e1823;
-    padding-top: 235px;
-    padding-bottom: 180px;
-    font-family: inherit;
+    padding-top: 260px;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(17, 19, 31, 0.15), rgba(17, 19, 31, 0.75), rgba(17, 19, 31, 0.98)),
+        url('../images/hero-images/hero-m.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .section.hero-section {
+        padding-top: 280px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section.hero-section {
+            padding-top: 235px;
+        }
+}
+
+@media (min-resolution: 2dppx) {
+    .section.hero-section {
+        background-image:
+            linear-gradient(rgba(17, 19, 31, 0.15), rgba(17, 19, 31, 0.75), rgba(17, 19, 31, 0.98)),
+            url('../images/hero-images/hero-m@2x.avif');
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+    .section.hero-section {
+        background-image:
+            linear-gradient(rgba(17, 19, 31, 0.15), rgba(17, 19, 31, 0.75), rgba(17, 19, 31, 0.98)),
+            url(../images/hero-images/hero-t@2x.avif);
+    }
+}
+
+@media (min-width: 1280px) and (min-resolution: 2dppx) {
+    .section.hero-section {
+        background-image:
+            linear-gradient(rgba(17, 19, 31, 0.15), rgba(17, 19, 31, 0.75), rgba(17, 19, 31, 0.98)),
+            url(../images/hero-images/hero-d@2x.avif);
+    }
 }
 
 .hero-container {
@@ -13,29 +56,45 @@
 }
 
 .main-title {
-    width: 1001px;
     font-weight: 500;
-    font-size: 80px;
+    font-size: 32px;
     line-height: 1;
     letter-spacing: -0.02em;    
     margin-bottom: 24px;
-    
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .main-title {
+        font-size: 80px;
+        max-width: 1001px;
+    }
 }
 
 .hero-text {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.16;
     color: rgba(251, 251, 251, 0.7);
-    width: 597px;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
+}
+
+@media (min-width: 768px) {
+    .hero-text {
+        font-size: 16px;
+        width: 597px;
+    }
 }
 
 .hero-link {
     border-radius: 15px;
     padding-block: 16px;
     padding-inline: 40px;
-    width: 179px;
     background-color: #1b414b;
     font-weight: 500;
     font-size: 18px;
