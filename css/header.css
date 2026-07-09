@@ -1,35 +1,45 @@
 .header {
-    width: 100%;
     position: absolute;
-    top: 32px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-
+    z-index: 100;
 }
 
-@media (min-width: 1280px) {
-    .header-container {
-        padding: 0 100px;
+@media only screen and (min-width: 768px) {
+    .header {
+        top: 32px;
     }
 }
 
-.header-content {
-    background-color: #fbfbfb;
-    z-index: 100;
+.header-container {
+    min-width: 335px;
+    background-color: #fbfbfb;    
+    border: 1px solid #fbfbfb;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #fbfbfb;
-    border-radius: 8px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    /* margin: 0 auto; */
-} 
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-container {
+        min-width: 704px;
+        padding: 0 28px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .header-container {
+        min-width: 1080px;
+        padding: 0 30px;
+    }
+}
 
 .header .logo {
     color: #1b414b;
+    padding: 12px 0;
 }
 
 .header .logo:hover,
@@ -37,26 +47,15 @@
     color: #062730;
 }
 
-.header .nav-list,
+.header .nav,
 .header .soc-list {
     display: none;
 }
 
-.burger-open-button {
-    position: relative;
-    z-index: 1000;
-}
-
-.burger-open {
-    stroke: #1b414b;
-    display: block;
-}
-.burger-open:hover,
-.burger-open:focus {
-    stroke: #062730;
-}
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+    .header .nav {
+        display: block;
+    }
     .header .nav-list {
         display: flex;
         gap: 4px;
@@ -72,18 +71,39 @@
         display: flex;
         gap: 8px;
     }
+
     .header .soc-icon {
         fill: #1b414b;
     }
+
     .header .soc-icon:hover,
     .header .soc-icon:focus {
         fill: #062730;
     }
-    .burger-open-button {
-        display: none;
-    }
-   
 }
 
+.open-menu-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
 
+.open-menu-icon {
+    stroke: #1b414b;
+    display: block;
+}
 
+.open-menu-icon:hover,
+.open-menu-icon:focus {
+    stroke: #062730;
+}
+
+.close-menu-icon {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .open-menu-btn {
+        display: none;
+    }
+}

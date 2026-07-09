@@ -3,14 +3,14 @@
     padding-right: 10px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer {
         padding-left: 16px;
         padding-right: 16px;
     }
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
     .footer {
         padding-left: 25px;
         padding-right: 25px;
@@ -23,7 +23,7 @@
     padding: 40px 30px 20px 30px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-container {
         padding-top: 50px;
         padding-left: 48px;
@@ -38,7 +38,7 @@
     margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-wrap {
         gap: 0;
         flex-direction: row;
@@ -52,13 +52,13 @@
     justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .logo-nav-container {
         gap: 110px;
     }
 }
 
-@media (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
     .logo-nav-container {
         gap: 330px;
     }
@@ -73,7 +73,7 @@
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer .soc-list {
         margin: 0;
     }
@@ -110,7 +110,7 @@
     margin-bottom: 82px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-motto {
         font-size: 32px;
         max-width: 640px;
@@ -118,7 +118,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-motto {
         max-width: 693px;
     }
@@ -134,7 +134,7 @@
     text-align: center;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-small-text {
         font-size: 14px;
     }

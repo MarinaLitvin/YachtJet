@@ -21,71 +21,110 @@
   </head>
 
   <body>
-    <header class="header">
-
-      <div class="container header-container">
-
-        <div class="header-content">
-
-          <a class="logo" href="#home">yachtjet</a>
-
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#yachts">Yachts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="soc-list">
-            <li class="soc-item">
-              <a
-                class="soc-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                >
-                <svg class="soc-icon" width="19" height="19">
-                  <use href="./images/icons.svg#icon-ig"></use>
-                </svg>
-              </a
+    <header class="header menu-open">
+      <div class="header-container">
+        <a class="logo" href="#home">yachtjet</a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#yachts">Yachts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="soc-list">
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
               >
-            </li>
-            <li class="soc-item">
-              <a class="soc-link" href="https://www.youtube.com/" target="_blank">
-                <svg class="soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-yt"></use>
-                </svg>
-              </a
-              >
-            </li>
-            <li class="soc-item">
-              <a class="soc-link" href="https://www.facebook.com/" target="_blank">
-                <svg class="soc-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>          
-        
-          <button
-            type="button"
-            class="burger-open-button"
-            aria-label="Open navigation menu"
-          >
-            <svg class="burger-open" width="28" height="28">
-              <use href="/images/icons.svg#icon-ci_menu-duo-lg"></use>
-            </svg>
-          </button>     
-                              
-        </div>
+              <svg class="soc-icon" width="19" height="19">
+                <use href="./images/icons.svg#icon-ig"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.youtube.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-yt"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.facebook.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <button class="open-menu-btn" type="button" aria-label="Open navigation menu">
+          <svg class="open-menu-icon" width="28" height="28">
+            <use href="/images/icons.svg#icon-ci_menu-duo-lg"></use>
+          </svg>
+          <svg class="close-menu-icon" width="28" height="28">
+            <use href="/images/icons.svg#icon-ion_close-sharp"></use>
+          </svg>
+        </button>
       </div>
-    </header>    
+    </header>
+    
+    <div class="mobile-menu">
+      
+        <nav class="mobile-nav">
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="#about" class="mobile-menu-link">About</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#yachts" class="mobile-menu-link">Yachts</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#reviews" class="mobile-menu-link">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <ul class="soc-list">
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              >
+              <svg class="soc-icon" width="19" height="19">
+                <use href="./images/icons.svg#icon-ig"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.youtube.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-yt"></use>
+              </svg>
+            </a
+            >
+          </li>
+          <li class="soc-item">
+            <a class="soc-link" href="https://www.facebook.com/" target="_blank">
+              <svg class="soc-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> 
+      
+    </div>
 
     <main>
       <section class="section hero-section">
@@ -580,67 +619,6 @@
         
     </footer>
 
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="container mobile-menu-container">
-
-        <div class="mobile-menu-header">
-          <a class="logo" href="#home">yachtjet</a>
-          <button
-            type="button"
-            class="burger-close-button"
-            aria-label="Close navigation menu"
-          >
-            <svg class="burger-close" width="28" height="28">
-              <use href="/images/icons.svg#icon-ion_close-sharp"></use>
-            </svg>
-          </button>
-        </div>
-
-
-        <nav class="mobile-nav">
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-item">
-              <a href="#about" class="mobile-menu-link">About</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="#yachts" class="mobile-menu-link">Yachts</a>
-            </li>
-            <li class="mobile-menu-item">
-              <a href="#reviews" class="mobile-menu-link">Reviews</a>
-            </li>
-          </ul>
-        </nav>
-        
-        <ul class="soc-list">
-          <li class="soc-item">
-            <a
-              class="soc-link"
-              href="https://www.instagram.com/"
-              target="_blank"
-              >
-              <svg class="soc-icon" width="19" height="19">
-                <use href="./images/icons.svg#icon-ig"></use>
-              </svg>
-            </a
-            >
-          </li>
-          <li class="soc-item">
-            <a class="soc-link" href="https://www.youtube.com/" target="_blank">
-              <svg class="soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-yt"></use>
-              </svg>
-            </a
-            >
-          </li>
-          <li class="soc-item">
-            <a class="soc-link" href="https://www.facebook.com/" target="_blank">
-              <svg class="soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul> 
-      </div>
-    </div>
+    
   </body>
 </html>
